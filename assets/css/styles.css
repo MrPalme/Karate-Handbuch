@@ -385,8 +385,17 @@ body {
   }
 
   .site-header .shell {
-    padding-inline: 2rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
   .hero, .section, .site-footer {
     padding-inline: 0;
@@ -411,5 +420,184 @@ body {
 
   .site-header .shell {
     padding-inline: 1rem;
+  }
+}
+
+/* Dark Mode – via prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background: #020617; /* sehr dunkles Blau-Schwarz */
+    color: #e5e7eb;
+  }
+
+  /* Header / Branding */
+  .site-header {
+    background: rgba(15, 23, 42, 0.94);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+  }
+
+  .logo-circle {
+    background: radial-gradient(circle at 30% 30%, #020617, #020617);
+    border-color: rgba(148, 163, 184, 0.6);
+  }
+
+  .logo-dot {
+    background: #ef4444; /* etwas helleres Karate-Rot auf dunklem Hintergrund */
+  }
+
+  .brand-subtitle {
+    color: #9ca3af;
+  }
+
+  /* Navigation */
+  .main-nav a {
+    color: #e5e7eb;
+    border-color: transparent;
+  }
+
+  .main-nav a:hover {
+    background: #e5e7eb;
+    color: #020617;
+    border-color: #e5e7eb;
+  }
+
+  /* Hero */
+  .hero-copy p {
+    color: #9ca3af;
+  }
+
+  /* Buttons */
+  .button.primary {
+    background: #f9fafb;
+    color: #020617;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .button.primary:hover {
+    background: #e5e7eb;
+  }
+
+  .button.ghost {
+    background: transparent;
+    color: #e5e7eb;
+    border-color: rgba(148, 163, 184, 0.6);
+  }
+
+  .button.ghost:hover {
+    background: rgba(148, 163, 184, 0.16);
+  }
+
+  /* Hero Panel / Card */
+  .hero-card {
+    background: linear-gradient(145deg, #020617, #020617);
+    box-shadow:
+      0 18px 45px rgba(0, 0, 0, 0.85),
+      0 0 0 1px rgba(31, 41, 55, 0.9);
+  }
+
+  .hero-card-label {
+    color: #9ca3af;
+  }
+
+  .hero-pill {
+    background: rgba(148, 163, 184, 0.18);
+    color: #e5e7eb;
+  }
+
+  .hero-card-text {
+    color: #9ca3af;
+  }
+
+  /* Area Cards / Sections */
+  .section-lead {
+    color: #9ca3af;
+  }
+
+  .area-card {
+    background: #020617;
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.85),
+      0 0 0 1px rgba(55, 65, 81, 0.9);
+  }
+
+  .area-card p {
+    color: #9ca3af;
+  }
+
+  .area-tag {
+    color: #6b7280;
+  }
+
+  .area-link {
+    color: #f97373;
+  }
+
+  .section-muted {
+    background: #020617;
+  }
+
+  .usage-list {
+    color: #9ca3af;
+  }
+
+  .usage-list li strong {
+    color: #e5e7eb;
+  }
+
+  .hint-panel {
+    background: #020617;
+    border-color: rgba(55, 65, 81, 0.9);
+    color: #9ca3af;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: #020617;
+    border-top-color: rgba(31, 41, 55, 0.9);
+    color: #6b7280;
+  }
+
+  .footer-note {
+    color: #6b7280;
+  }
+}
+
+/* Back-Button */
+
+.back-button {
+  display: none; /* Standard: versteckt, Mobile zeigt ihn per Media-Query */
+  border: none;
+  background: transparent;
+  padding: 0.2rem 0.4rem 0.2rem 0;
+  margin-right: 0.2rem;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #111827;
+  cursor: pointer;
+}
+
+.back-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.back-label {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 599px) {
+  .back-button {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-label {
+    display: none;
   }
 }

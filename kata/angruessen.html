@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <script src="../assets/js/components.js"></script>
   <meta charset="utf-8">
   <title>Angrüßen – Kata</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell">
-      <div class="branding">
-        <div class="logo-circle">
-          <span class="logo-dot"></span>
-        </div>
-        <div class="brand-text">
-          <span class="brand-title">Karate Technikbibliothek</span>
-          <span class="brand-subtitle">Kata – Angrüßen</span>
-        </div>
-      </div>
-
-      <nav class="main-nav">
-        <a href="../index.html">Start</a>
-        <a href="../kihon/index.html">Kihon</a>
-        <a href="index.html">Kata</a>
-      </nav>
-    </div>
-  </header>
+  <site-header
+    data-subtitle="Kata - Angrüßen"
+    data-root="../"
+    data-active="kata"
+    data-enable-back="true"
+    data-back-href="../index.html">
+  </site-header>
 
   <main>
     <section class="section">
@@ -74,18 +63,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-left">
-        <span>© 2025 Markus Mock. Alle Rechte vorbehalten.</span>
-        <span class="footer-note">
-          Generelle Regeln zum Angrüßen in Katas.
-        </span>
-      </div>
-      <div class="footer-right">
-        <span>Kata · Angrüßen</span>
-      </div>
-    </div>
-  </footer>
+
+<site-footer></site-footer>
 </body>
 </html>
