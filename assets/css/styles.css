@@ -99,7 +99,7 @@ body {
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  transition: border-color 160ms ease, color 160ms ease;
 }
 
 .main-nav a:hover {
@@ -151,7 +151,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease,
+  transition: color 160ms ease, box-shadow 160ms ease,
     border-color 160ms ease, transform 80ms ease;
 }
 
@@ -264,8 +264,7 @@ body {
   box-shadow:
     0 12px 30px rgba(15, 23, 42, 0.05),
     0 0 0 1px rgba(148, 163, 184, 0.25);
-  transition: transform 120ms ease, box-shadow 140ms ease,
-    background 160ms ease;
+  transition: transform 120ms ease, box-shadow 140ms ease;
 }
 
 .area-card:hover {
