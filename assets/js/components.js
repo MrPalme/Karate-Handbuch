@@ -88,7 +88,7 @@ class SiteFooter extends HTMLElement {
             </span>
           </div>
           <div class="footer-right">
-            <span>Kata · Version 0.1</span>
+            <span>Version 0.1</span>
           </div>
         </div>
       </footer>
