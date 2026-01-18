@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <script src="../assets/js/components.js"></script>
   <meta charset="utf-8">
   <title>Heian Shodan – Kata</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell">
-      <div class="branding">
-        <div class="logo-circle">
-          <span class="logo-dot"></span>
-        </div>
-        <div class="brand-text">
-          <span class="brand-title">Karate Technikbibliothek</span>
-          <span class="brand-subtitle">Kata – Heian Shodan</span>
-        </div>
-      </div>
-
-      <nav class="main-nav">
-        <a href="../index.html">Start</a>
-        <a href="../kihon/index.html">Kihon</a>
-        <a href="index.html">Kata</a>
-      </nav>
-    </div>
-  </header>
+  <site-header
+    data-subtitle="Kata – Heian Shodan"
+    data-root="../"
+    data-active="kata"
+    data-enable-back="true"
+    data-back-href="../kata/index.html">
+  </site-header>
 
   <main>
     <section class="section">
       <div class="shell">
         <h1>Heian Shodan</h1>
+
         <p class="section-lead">
-          Einstiegskata mit Fokus auf Grundstände und Basisblöcke.
-          Hier kommen deine Tafeln für den gesamten Ablauf mit Pfeilen,
-          ggf. getrennt nach DJKB-/JKA-Interpretation.
+          <strong>21 Zählzeiten</strong>, <strong>Kiai</strong> bei <strong>11</strong> und <strong>26</strong>.
+          <br>
+          <strong>Hinweis:</strong> Technik <strong>7–9</strong>
+          <a href="../kihon/age-uke.html">Age-Uke</a> (Ausholbewegung beachten).
         </p>
 
         <div class="card-grid">
-          <div class="area-card">
-            <div class="area-tag">Ablauf</div>
-            <h3>Gesamtübersicht</h3>
+          <!-- OBEN: Bilder untereinander -->
+          <div class="area-card area-card--wide">
+            <div class="area-tag">Visuelle Referenz</div>
+            <h3>Technik 4 – Bilder</h3>
+
+            <figure class="kata-figure">
+              <img
+                src="../assets/img/kata/heian_shodan/Heian-Shodan1.webp"
+                alt="Heian Shodan – Technik 4: Zenkutsu-Dachi, Hüfte abgedreht, Faust auf Nase/Mund-Höhe."
+                loading="lazy">
+              <figcaption>
+                Bild 1 (Technik 4): Zenkutsu-Dachi · Hüfte abgedreht · Faust auf Nase/Mund-Höhe
+              </figcaption>
+            </figure>
+
+            <figure class="kata-figure">
+              <img
+                src="../assets/img/kata/heian_shodan/Heian-Shodan2.webp"
+                alt="Heian Shodan – Technik 4 Detail: Gewichtsverlagerung, Hüftdrehen, Armweg in D-Form."
+                loading="lazy">
+              <figcaption>
+                Bild 2 (Detail Technik 4): Gewichtsverlagerung + Hüftarbeit · Armweg „D“-förmig (siehe Bild)
+              </figcaption>
+            </figure>
+
             <p>
-              <em>Platzhalter:</em> Hier fügst du die große Übersicht
-              (z.B. deine Heian-Godan-artige Tafel) ein.
+              <strong>Wichtig:</strong> Die <strong>Gewichtsverlagerung muss erkennbar</strong> sein.
+              Wie weit, ist <strong>nicht vorgeschrieben</strong>.
             </p>
-            <!-- <img src="../assets/img/kata/heian-shodan-overview.png" alt="Heian Shodan Übersicht"> -->
+          </div>
+
+          <!-- UNTEN: 2 Boxen nebeneinander -->
+          <div class="area-card">
+            <div class="area-tag">Bild 1</div>
+            <h3>Technik 4 – Position</h3>
+            <ul class="usage-list">
+              <li><strong>Stand:</strong> Zenkutsu-Dachi</li>
+              <li><strong>Hüfte:</strong> abgedreht</li>
+              <li><strong>Faust:</strong> auf Nase-/Mundhöhe</li>
+            </ul>
           </div>
 
           <div class="area-card">
-            <div class="area-tag">Zählzeiten</div>
-            <h3>Zählweise</h3>
-            <p>
-              Hier kannst du stichwortartig Zählzeiten festhalten oder
-              auf die generelle Seite
-              <a href="zaehlzeiten.html">Zählzeiten</a> verlinken.
-            </p>
-          </div>
-
-          <div class="area-card">
-            <div class="area-tag">Kihon-Referenzen</div>
-            <h3>Verknüpfte Techniken</h3>
-            <p>
-              Nutze diese Seite für Links zu den Kihon-Seiten, z.&nbsp;B.:
-            </p>
-            <p>
-              • <a href="../kihon/age-uke.html">Age-Uke</a><br>
-              • <a href="../kihon/uchi-uke.html">Uchi-Uke</a>
-            </p>
+            <div class="area-tag">Bild 2</div>
+            <h3>Technik 4 – Ausführung (Detail)</h3>
+            <ol class="usage-list">
+              <li>
+                Aus <strong>Gedan-Barai</strong> den <strong>Schwerpunkt nach hinten</strong> verlagern.
+              </li>
+              <li>
+                <strong>Hikite bleibt bestehen</strong> (bewegt sich nicht).
+              </li>
+              <li>
+                <strong>Hüfte dreht ein</strong> – der <strong>Gürtelknoten zeigt in Schlagrichtung</strong>.
+              </li>
+              <li>
+                Der <strong>Arm ist vor dem Gesicht</strong>.
+              </li>
+              <li>
+                <strong>Vorderes Bein</strong> wieder in die <strong>Zenkutsu-Bewegung</strong>.
+              </li>
+              <li>
+                <strong>Hüfte dreht wieder auf</strong>.
+              </li>
+              <li>
+                Armweg: quasi wie ein <strong>„D“</strong> (siehe Bild).
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-left">
-        <span>© 2025 Markus Mock. Alle Rechte vorbehalten.</span>
-        <span class="footer-note">
-          Kata-Detailseite Heian Shodan.
-        </span>
-      </div>
-      <div class="footer-right">
-        <span>Kata · Heian Shodan</span>
-      </div>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </body>
 </html>
